@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Flat Catalog Design -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	
+	<xs:element name="smoothMusicStore">
+		<xs:complexType>
+            <xs:sequence>
+				<xs:element ref="storeDetails"/>	
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!-- storeDetails reference - child element of smoothMusicStore element -->
+	<xs:element name="storeDetails">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="storeName"/>
+				<xs:element ref="websiteAddress"/>
+				<xs:element ref="address"/>
+				<xs:element ref="telephoneNo" minOccurs="1" maxOccurs="2"/>
+				<xs:element ref="logo"/>
+				<xs:element ref="music"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+
+	<xs:element name="storeName" type="xs:string"/>
+	<xs:element name="websiteAddress"/>
+	<xs:element name="address" type="xs:string"/>
+	<xs:element name="telephoneNo" type="xs:string"/>
+	<xs:element name="logo">
+		<xs:complexType/>
+	</xs:element>
+	
+	<!-- music reference - child element of storeDetails element -->
+	<xs:element name="music">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="div" minOccurs="1" maxOccurs="unbounded"/>
+				<!--<xs:element ref="songs" minOccurs="1" maxOccurs="unbounded"/>-->
+			</xs:sequence>
+		</xs:complexType>	
+	</xs:element>
+	<!-- div reference - child element of music element -->
+	<!-- div element can occurs multiple times-->
+	<xs:element name="div">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="h1" minOccurs="1" maxOccurs="unbounded"/>
+				<xs:element ref="songs" minOccurs="1" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<!-- using restriction and enumeration list -->
+			<xs:attribute ref="class"  use="required"/>	
+		</xs:complexType>
+	</xs:element>
+    <!-- using the restriction and enumeration for the attributes of the div element-->
+	<xs:attribute name="class">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="pricing-box1"/>
+				<xs:enumeration value="pricing-box2"/>
+				<xs:enumeration value="pricing-box3"/>
+				<xs:enumeration value="pricing-box4"/>
+				<xs:enumeration value="pricing-box5"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<!-- h1 reference - child element of div element -->
+	<xs:element name="h1" type="xs:string"/>
+
+	<!-- songs reference - child element of div element -->
+	<!-- songs element can occur multiple times -->
+	<xs:element name="songs">
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				
+				<xs:element ref="director"/>
+				<xs:element ref="musician"/>
+				<xs:element ref="lyricsWriter"/>
+				<xs:element ref="producer" minOccurs="1" maxOccurs="unbounded"/>
+				<xs:element ref="producer1" minOccurs="1" maxOccurs="unbounded"/>
+				<xs:element ref="songName"/>
+				<xs:element ref="album"/>
+				<xs:element ref="durationTime"/>
+				<xs:element ref="releaseDate"/>
+				<xs:element ref="genre"  minOccurs="1" maxOccurs="unbounded"/>
+				<xs:element ref="singers" minOccurs="1" maxOccurs="unbounded"/>
+				<xs:element ref="review" minOccurs="0" maxOccurs="4"/>
+				<xs:element ref="h2"/>
+				<xs:element ref="div1" minOccurs="1" maxOccurs="unbounded"/>
+				<xs:element ref="click"/>
+			
+			</xs:sequence>
+			<!-- defining ID datatype on song_code attribute -->
+			
+					<!-- defining default value as 00:00-00 -->
+				<xs:attribute ref="song_code"  use="required"/>
+			    <xs:attribute ref="discNumber"/>
+			    <xs:attribute ref="trackNumber"/>	
+		</xs:complexType>
+	</xs:element>
+	<!-- giving the attributes of the songs, they are discNumber, song_code, trackNumber-->
+	<xs:attribute name="discNumber">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[0-9]{3}-[A-Z]{2}-[0-9][a-z]"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+    <!-- giving the datatype for attributes as ID and NMTOKEN-->
+	<xs:attribute name="song_code" type="xs:ID"/>
+	<xs:attribute name="trackNumber" type="xs:NMTOKEN" default="00:00-00"/>
+    <!-- giving the datatype for elements as of the Songs-->
+	<xs:element name="director" type="xs:string"/>
+	<xs:element name="producer" type="xs:string"/>
+	<xs:element name="producer1" type="xs:string"/>
+	<xs:element name="album" type="xs:string"/>
+	<xs:element name="lyricsWriter" type="xs:string"/>
+	<xs:element name="songName" type="xs:string"/>
+	<xs:element name="genre" type="xs:string"/>
+	<xs:element name="durationTime" type="xs:string"/>
+	<xs:element name="h2" type="xs:string"/>
+	<xs:element name="review" type="xs:string"/>
+	
+	<xs:element name="div1">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<!-- defining musician datatype on musicianType attribute and required is used in
+					attributes-->
+					<xs:attribute ref="cls" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<!-- using restriction and enumeration list for the attributes of the div element -->
+	<xs:attribute name="cls">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="icon"/>
+				<xs:enumeration value="icon2"/>
+				<xs:enumeration value="icon3"/>
+				<xs:enumeration value="icon4"/>
+				<xs:enumeration value="icon5"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:element name="click" type="xs:string"/>
+	<!-- in the release data there is three element and there are year, month and day.
+	 In month and day there is choice type.-->
+	<xs:element name="releaseDate">
+		<xs:complexType mixed="true">
+			<xs:choice minOccurs="1" maxOccurs="3">
+				<xs:element ref="day" minOccurs="0" maxOccurs="3"/>
+				<xs:element ref="month" minOccurs="0" maxOccurs="3"/>
+				<xs:element ref="year"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="day" type="xs:integer"/>
+	<xs:element name="month" type="xs:string" />
+	<xs:element name="year" type="xs:string"/>
+
+	<!-- musician reference - child element of songs element-->
+	<xs:element name="musician">
+        <xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute ref="musicianType"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+    </xs:element>
+    <!-- using restriction and enumeration list for the attributes of the musician element -->
+	<!-- defining musician datatype on musicianType attribute -->
+    <xs:attribute name="musicianType">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="guitarist"/>
+				<xs:enumeration value="drummer"/>
+				<xs:enumeration value="Pianist"/>
+				<xs:enumeration value="Flutist"/>
+				<xs:enumeration value="Tubaist"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<!-- singers reference - child element of songs element -->
+	<xs:element name="singers">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+				<xs:element ref="singerName"/>
+				<xs:element ref="saddress" minOccurs="0" maxOccurs="4"/>
+				<xs:element ref="phone" minOccurs="0" maxOccurs="4"/>
+				<xs:element ref="totalSongRecorded"/>
+				<xs:element ref="fanFollowing" minOccurs="0" maxOccurs="4"/>
+			</xs:sequence>
+		</xs:complexType>
+    </xs:element>
+    <!-- Giving the datatype for the element of the singer  -->
+    <xs:element name="singerName" type="xs:string"/>
+    <xs:element name="saddress" type="xs:string"/>
+    <xs:element name="totalSongRecorded" type="xs:string"/>
+    <xs:element name="fanFollowing" type="xs:string"/>
+    <!-- phone reference - child element of singers element-->
+	<xs:element name="phone">
+        <xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<!-- using restriction and enumeration list for the attributes of the phone -->
+					<xs:attribute ref="type"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+    </xs:element>
+    <!-- using restriction and enumeration list for the attributes of the phone, there is the
+    two choice of the phone type and they are primary and secondary -->
+    <xs:attribute name="type">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="primary" />
+				<xs:enumeration value="secondary" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+</xs:schema>
+
+
+

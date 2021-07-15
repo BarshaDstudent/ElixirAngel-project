@@ -1,0 +1,50 @@
+<!--Author:Barsha Kumari Das
+ Date:2021-04-25
+ DTD stand for document type definition.DTD is define the valid building blocks of the XML document.it 
+ define the structure of the XML document.The datatype of the all the element, attributes mention in this file. PCDATA stand for parse character data. +sign stand for those element which repeate more than one times. ?sign stand for those element which may occure or maynot occure.
+ IMPLIED is used for those attributes which maybe occure or maynot come.
+ REQUIRED is used for the attributes those most have to occure.  
+ -->
+<!ELEMENT smoothMusicStore (storeDetails)>
+<!ELEMENT storeDetails (storeName, websiteAddress, address, telephoneNo+,logo, music)>
+<!ELEMENT storeName (#PCDATA)>
+<!ELEMENT websiteAddress (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT telephoneNo (#PCDATA)>
+<!ELEMENT logo (#PCDATA)>
+<!ELEMENT music (div+)>
+<!ELEMENT div (h1+, songs+)>
+<!ELEMENT h1 (#PCDATA)>
+<!ELEMENT songs (director, musician, lyricsWriter, producer+,producer1+, songName, album, durationTime, releaseDate, genre, singers+, review?, h2+, div1+, click+ )>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT musician (#PCDATA)>
+<!ELEMENT lyricsWriter (#PCDATA)>
+<!ELEMENT producer (#PCDATA)>
+<!ELEMENT producer1 (#PCDATA)>
+<!ELEMENT songName (#PCDATA)>
+<!ELEMENT album (#PCDATA)> <!-- parsed character data-->
+<!ELEMENT durationTime (#PCDATA)>
+<!ELEMENT releaseDate (year, month?, day?)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT month (#PCDATA)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT singers (singerName+, saddress?, phone+, totalSongRecorded+, fanFollowing?)>
+<!ELEMENT singerName (#PCDATA)>
+<!ELEMENT saddress (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT totalSongRecorded (#PCDATA)>
+<!ELEMENT fanFollowing (#PCDATA)>
+<!ELEMENT review (#PCDATA)>
+<!ELEMENT h2 (#PCDATA)>
+<!ELEMENT div1 (#PCDATA)>
+<!ELEMENT click (#PCDATA)>
+
+<!ATTLIST div class CDATA #REQUIRED>
+<!ATTLIST songs song_code CDATA #REQUIRED>
+<!ATTLIST songs discNumber CDATA #IMPLIED>
+<!ATTLIST songs trackNumber CDATA #IMPLIED>
+<!ATTLIST musician musicianType (guitarist|drummer|Pianist|Flutist|Tubaist) #REQUIRED>
+<!ATTLIST phone type (primary|secondary) #IMPLIED>
+<!ATTLIST div1 cls (icon|icon2|icon3|icon4|icon5) #REQUIRED>
+

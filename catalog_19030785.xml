@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="catalog_19030785.css"?>
+<!--This is the xml document for the smoothmusical store -->
+
+<!--<smoothMusicStore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+	xsi:noNamespaceSchemaLocation="catalog_19030785.xsd">-->
+	<!-- the main screen of the xml file opened for example the screen that appears first when the document is opened-->
+<!DOCTYPE smoothMusicStore SYSTEM "catalog_19030785.dtd">
+<smoothMusicStore>
+	<!--storeDetails display all the information about the store.store address, website address, telephone no and the contact no of the store is multiple-->
+	<storeDetails>
+		<storeName>ElixirAngel Music Store</storeName>
+	    <websiteAddress>www.baniya.com</websiteAddress>
+	    <address>New Baneshwor,Kathmandu</address>
+	    <telephoneNo>TelephoneNo:90342312</telephoneNo>
+	    <telephoneNo>PhoneNo:00342312</telephoneNo>
+	    <logo></logo>
+	    <music>
+	    	<!--pricing-box1 is used to make the table for the details of the Jazz music and all the contain display inside the table.-->
+	        <div class="pricing-box1">
+	        	<!-- This h1 tag is for representing the Collection of the particular type of songs -->
+	    		<h1>Jazz Music Collection</h1>
+	    		<!--Inside song all the details of the song is display. song have three attributes and other element which give the proper information of about the song. the datatype of the attributes is ID, NMTOKEN, Pattern-->
+		        <songs song_code="c01" discNumber="211-ED-9a" trackNumber="AE:32:ER">
+			        <director>Director:Ahmad Jamal</director>
+			        <!-- musician have there musiciantype attributes which repesent the type of the musician inside the songs and datatype is string-->
+			        <musician musicianType="guitarist">Musician:Gil Evans,Balk James</musician>
+			        <lyricsWriter>LyricsWritter:Miles Davis</lyricsWriter>
+			        <producer>Producers Name:</producer>
+			        <producer1>Bill Eva</producer1>
+			        <producer1>Teo Macero</producer1>
+			        <producer1>John Coltrane</producer1>
+			        <songName>SongName:So What</songName>
+			        <album>Album:Kind of blue</album>
+			        <durationTime>Duration Time:9:30</durationTime>
+			        <releaseDate>
+				        <year>ReleaseDate:1959</year>
+				        <month>August</month>
+				        <day>17</day>
+			        </releaseDate>
+			        <genre>Genre:Jazz Music</genre>
+			        <!--singers provide the details about the singer.phone element have two attributes which is primary or secondary-->
+			        <singers>
+				        <singerName>SingerName:Ed sheeran</singerName>
+				        <saddress>Address:Framlingham, United kingdom</saddress>
+				        <phone type="primary">Primary PhoneNo:0024354</phone>
+				        <totalSongRecorded>TotalSongRecorded:150</totalSongRecorded>
+				        <fanFollowing>FanFollowing:24M</fanFollowing>
+			        </singers>
+			        <review>
+			        	This is good in music.The lyrics of this song is very heart touching.Many peope like this song and this song get many view and the meaning of the song is very beautiful and make the soul peaceful.
+			        </review>        
+			        <h2>Image of So What</h2>
+			        <!--This icon for displaying the images of the songs-->
+			        <div1 cls="icon"></div1>
+			         <!--This click tag display more information about the songs.-->
+			        <click>Click Here For More </click>   
+		        </songs>    
+		    </div>
+            <!--pricing-box2 is used to make the table for the details of the Rock music and all the contain display inside the table.-->
+		    <div class="pricing-box2">
+	    		<h1>Rock Music Collection</h1>
+		        <songs song_code="c02" discNumber="281-BD-2a">
+			        <director>Director:Roger Mayer</director>
+			        <!-- musician have there musiciantype attributes which repesent the type of the musician inside the songs-->
+			        <musician musicianType="drummer">Musician:Mitch Mitchel,Jhoni Durba</musician> 
+			        <lyricsWriter>LyricsWritter:Pritiam Jimi</lyricsWriter>
+			        <producer>Producers Name:</producer>
+			        <producer1>Bunji Garlin</producer1>
+			        <producer1>Jeff Kush</producer1>
+			        <producer1>Charly Jorden</producer1>
+			        <songName>SongName:Purple Haze</songName>
+			        <album>Album:De Lane series</album>
+			        <durationTime>DurationTime:2:40</durationTime>
+			        <!--Release date display the time of releasing of the song and month and day is not compulsory-->
+			        <releaseDate>
+				        <year>ReleaseDate:1967</year>
+				        <month>March</month>
+				        <day>12</day>
+			        </releaseDate>
+			        <genre>Gener:Rock Music</genre>
+			        <!--singers provide the details about the singer.phone element have two attributes which is primary or secondary-->
+			        <singers>
+				        <singerName>SingerName:Jimi Hendrix</singerName>
+				        <saddress>Address:Califonia, United kingdom</saddress>
+				        <phone type="primary">Primary PhoneNo:1024354</phone>
+				        <totalSongRecorded>TotalSongRecorded:150</totalSongRecorded>
+			        </singers>
+			        <review>This song is good with lyrics.The song’s sound being powerfully mystifying, a search of musical spirituality.It was about going through,through this land.This mythical because that's what I like to do is write a lot of mythical scenes.You know, like the history of the wars on Neptune.</review>         
+			        <h2>Image of Purple Haze</h2>
+			        <!--This icon2 for displaying the images of the songs-->
+			        <div1 cls="icon2"></div1>
+			        <!--This click tag display more information about the songs.-->
+			        <click>Click Here For More</click>   
+		        </songs>    
+		    </div>
+
+            <!--pricing-box3 is used to make the table for the details of the pop music and all the contain display inside the table.-->
+		    <div class="pricing-box3">
+	    		<h1>Country Music Collection</h1>
+		        <songs song_code="c03"  trackNumber="AE:12:ER">
+			        <director>Director:Trey Parker</director>
+			        <!-- musician have there musiciantype attributes which repesent the type of the musician inside the songs-->
+			        <musician musicianType="Pianist">Musician:Vince Gill,Jasmin Ali</musician>
+			        <lyricsWriter>LyricsWriter:Alan Jackson</lyricsWriter>
+			        <producer>ProducersName:</producer>
+			        <producer1>Mitch Mitchel</producer1>
+                    <producer1>Noel Redding</producer1>
+                    <producer1>Chandler</producer1>
+			        <songName>SongName:Where were you</songName>
+			        <album>Album:Drive</album>
+			        <durationTime>DurationTime:5:05</durationTime>
+			        <!--Release date display the time of releasing of the song and month and day is not compulsory-->
+			        <releaseDate>
+				        <year>ReleaseDate:2001</year>
+				        <month>November</month>
+				        <day>12</day>
+			        </releaseDate>
+			        <genre>Gener:CountryMusic</genre>
+			        <!--singers provide the details about the singer.phone element have two attributes which is primary or secondary-->
+			        <singers>
+				        <singerName>SingerName:Alan Jackson</singerName>
+				        <saddress>Address:Texas, United kingdom</saddress>
+				        <phone type="primary">Primary PhoneNo:1024354</phone>
+				        <phone type="secondary">Secondary PhoneNo:1064354</phone>
+				        <totalSongRecorded>TotalSongRecorded:150</totalSongRecorded>
+				        <fanFollowing>FanFollowing:30M</fanFollowing>
+			        </singers>
+			        <review>This song is good. This song touched the heart of the people. This song is written on the reaction to the spetember 11 attack in the United State, written in the form of question. Jackson desired to write a song capturing the emotion surrounding the attacks. This song recived largely positive reviews from the crities, who appreciated its sipmle largly apolitical stance. </review>         
+			        <h2>Image of Country Music</h2>
+			        <!--This icon3 for displaying the images of the songs-->
+			        <div1 cls="icon3"></div1>
+			        <!--This click tag display more information about the songs.-->
+			        <click>Click Here For More</click>   
+		        </songs>    
+		    </div>
+            <!--pricing-box4 is used to make the table for the details of the country music and all the contain display inside the table.-->
+		    <div class="pricing-box4">
+	    		<h1>Pop Music Collection</h1>
+		        <songs song_code="c04" discNumber="281-CD-4b" trackNumber="AE:12:RR">
+			        <director>DirectorName:Peggy Lipton</director>
+			        <!-- musician have there musiciantype attributes which repesent the type of the musician inside the songs-->
+			        <musician musicianType="Flutist">Musician:Jack Jhone,Niche Michal</musician>
+			        <lyricsWriter>LyricsWritter:Rod Temperton</lyricsWriter>
+			        <producer>ProducersName:</producer>
+			        <producer1>Vince Gill</producer1>
+			        <producer1>Stephen Erlewin</producer1>
+			        <producer1>Hank William</producer1>
+			        <songName>SongName:Thriller</songName>
+			        <album>Album:Westlake</album>
+			        <durationTime>DurationTime:5:03</durationTime>
+			        <!--Release date display the time of releasing of the song and month and day is not compulsory-->
+			        <releaseDate>
+				        <year>ReleaseDate:1983</year>   
+			        </releaseDate>
+			        <genre>Genre:PopMusic</genre>
+			        <!--singers provide the details about the singer.phone element have two attributes which is primary or secondary-->
+			        <singers>
+				        <singerName>SingerName:Michael Jackson</singerName>
+				        <saddress>Address:United kingdom</saddress>
+				        <phone type="primary">Primary PhoneNo:0124354</phone>
+				        <phone type="secondary">Secondary PhoneNo:0034354</phone>
+				        <totalSongRecorded>TotalSongRecorded:150</totalSongRecorded>
+				        <fanFollowing>FanFollowing:35M</fanFollowing>
+			        </singers>
+			        <review>This song lyrics is releated to the horror films with sound effect such as thunder, footstep and wind.It ends with a spoken-word sequence performed by horror actor Vincent Price.</review>       
+			        <h2>Image of Thriller</h2>
+			        <!--This icon4 for displaying the images of the songs-->
+			        <div1 cls="icon4"></div1>
+			        <!--This click tag display more information about the songs.-->
+			        <click>Click Here For More</click>   
+		        </songs>    
+		    </div>
+            <!--pricing-box5 is used to make the table for the details of the dupstep music and all the contain display inside the table.-->
+		    <div class="pricing-box5">
+	    		<h1>Dubstep Music Collection</h1>
+		        <songs song_code="c05" discNumber="281-ED-1c">
+			        <director>Director:Steve Aoki</director>
+			        <!-- musician have there musiciantype attributes which repesent the type of the musician inside the songs-->
+			        <musician musicianType="Tubaist">Musician:Bunjil Garlin,Hachim John</musician>
+			        <lyricsWriter>LyricsWriter:Riot Ten</lyricsWriter>
+			        <producer>Producers Name:</producer>
+			        <producer1>Jack John</producer1>
+			        <producer1>John Sahii</producer1>
+			        <songName>SongName:Rail Breaker</songName>
+			        <album>Album:Blkmrkt</album>
+			        <durationTime>DurationTime:5:06</durationTime>
+			        <!--Release date display the time of releasing of the song and month and day is not compulsory-->
+			        <releaseDate>
+				        <year>ReleaseDate:2017</year>
+			        </releaseDate>
+			        <genre>Genre:Dubstep Music</genre>
+			        <!--singers provide the details about the singer.phone element have two attributes which is primary or secondary-->
+			        <singers>
+				        <singerName>SingerName:Christopher Wilson</singerName>
+				        <phone type="primary">Primary PhoneNo:00124354</phone>
+				        <totalSongRecorded>TotalSongRecorded:100</totalSongRecorded>
+				        <fanFollowing>FanFollowing:36M</fanFollowing>
+			        </singers>    
+			        <h2>Image of Rail Breaker</h2>
+			        <!--This icon4 for displaying the images of the songs-->
+			        <div1 cls="icon5"></div1>
+			        <!--This click tag display more information about the songs.-->
+			        <click>Click Here For More</click>   
+		        </songs>    
+		    </div>
+	    </music>
+    </storeDetails>	
+</smoothMusicStore>

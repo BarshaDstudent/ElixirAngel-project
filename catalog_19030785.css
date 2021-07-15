@@ -1,0 +1,788 @@
+/*address tag is used in the singers for displaying the address of the singer,
+and the hover affect is used.*/
+smoothMusicStore { 
+	background: url(images/cat.jpg)no-repeat center fixed;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	#background-color: #66CCFF;
+	
+}
+
+music{
+	font-size: 80%;
+	margin: 0.5em;
+	font-family: verdana;
+	display: block;
+}
+
+/*logo tag is used in the storeDetails for displaying the logo of the singer,
+and the hover affect is used.*/
+logo{
+	float: left;
+	display: block;
+	text-align: left;
+	width: 230px;
+	height: 220px;
+	background-image: url(images/m.webp);
+	margin-top: : 0em;
+	margin-left: 10px;
+	margin-bottom: 2em;
+	transition: transform 0.5s;
+	#box-shadow: 0 5px 25px rgba(0,0,0,.1);
+	transform: transform 1s cubic-bezire(0.7, 0.04, 0.06, 1.71) ;
+}
+logo:hover{
+	transform: translateX(100%);
+	#transform: scale(1.1);
+    #box-shadow: 0 5px 25px rgba(0,0,0,.2);
+
+}
+/*storeName tag is used in the storeDetails for displaying the storeName of the Shop,
+and the hover affect is used.*/
+storeName{
+	max-width: 1000px
+    margin:10px;
+    letter-spacing: 2px;
+    font-size: 80px;
+    padding: 0px;
+    text-align: center;
+    color: #00CCCC;
+    display: block;
+    font-family: 'Work Sans', Sans-serif;
+    transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+	
+
+}
+storeName:before{
+	content: "\2764";
+	color: #3399CC;
+}
+storeName:hover{
+	background-color: #fff;
+	color:pink;
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+
+}
+/*website tag is used in the storeDetails for displaying the website address of the shop,
+and the hover affect is used.*/
+websiteAddress{
+	display: block;
+	#border: 1px solid silver;
+	margin: 0em;
+	margin-left: 700px;
+	padding: 0em;
+	text-align: center;
+	color: #0000FF;
+	transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+}
+websiteAddress:hover{
+	background-color: #a3a3a3;
+	color:pink;
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+
+}
+/*aaddress tag is used in the singers for displaying the address of the shop,
+and the hover affect is used.*/
+address{
+	display: block;
+	margin: 0em;
+	padding: 0em;
+	margin-left: 700px;
+	text-align: center;
+	color: #0000FF;
+	transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+
+}
+address:hover{
+	background-color: #a3a3a3;
+	color:pink;
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+
+}
+/*TelephoneNo tag is used in the storeDetails for displaying the contactNo of the shop,
+and the hover affect is used.*/
+telephoneNo{
+	display: block;
+	#border: 1px solid silver;
+	margin: 0em;
+	padding: 0em;
+	text-align: center;
+	display: list-item;
+	margin-left: 930px;
+	margin-right: 550px;
+	color: #0000FF;
+	transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+}
+telephoneNo:hover{
+	background-color: #a3a3a3;
+	color:pink;
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+
+}
+/*Using pricing-table to make the different table for the different Jazz Music collection. there are five table used in this style
+Inside the pricing table all the content are justified and transition are used.
+The hover affect is used inside the table by using the hover.while clicking on the table it shows the 
+hover affect with expanding the size of the table*/
+music [class=pricing-box1]{
+	max-width: 800px;
+	float: right;
+	display:block;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+	margin: 2em;
+	margin-right: 170px;
+	margin-left: 70px;
+	padding: 1em;
+	border: 1px solid silver;
+	background-color: pink;
+	transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+}
+music [class=pricing-box1]:hover{
+	
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+
+}
+
+
+/*Using pricing-table to make the different table for the different Rock Music collection. there are five table used in this style
+Inside the pricing table all the content are justified and transition are used.
+The hover affect is used inside the table by using the hover.while clicking on the table it shows the 
+hover affect with expanding the size of the table*/
+music [class=pricing-box2]{
+	max-width: 800px;
+	float: right;
+	margin:0em;
+	display:block;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+	margin-right: 170px;
+	margin-left: 70px;
+	padding: 1em;
+	border: 1px solid silver;
+	background-color: #F773D4;
+	transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+			
+}
+music [class=pricing-box2]:hover{
+	
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+
+}
+/*Using pricing-table to make the different table for the different PopMusic collection. there are five table used in this style
+Inside the pricing table all the content are justified and transition are used.
+The hover affect is used inside the table by using the hover.while clicking on the table it shows the 
+hover affect with expanding the size of the table*/
+music [class=pricing-box3]{
+	max-width: 800px;
+	float: right;
+	margin:2em;
+	display:block;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+	margin-right: 170px;
+	margin-left: 70px;
+	padding: 1em;
+	border: 1px solid silver;
+	background-color: #CA9E78;
+	transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+			
+}
+music [class=pricing-box3]:hover{ 
+	
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+
+}
+/*Using pricing-table to make the different table for the different country Music collection. there are five table used in this style
+Inside the pricing table all the content are justified and transition are used.
+The hover affect is used inside the table by using the hover.while clicking on the table it shows the 
+hover affect with expanding the size of the table*/
+music [class=pricing-box4]{
+	max-width: 800px;
+	float: right;
+	margin:0em;
+	display:block;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+	margin-right: 170px;
+	margin-left: 70px;
+	padding: 1em;
+	border: 1px solid silver;
+	background-color: #5CC5D5;
+	transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+			/* using pricing-table to make the different table*/
+}
+music [class=pricing-box4]:hover{
+	
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+
+}
+/*Using pricing-table to make the different table for the different Dubstep Music collection. there are five table used in this style
+Inside the pricing table all the content are justified and transition are used.
+The hover affect is used inside the table by using the hover.while clicking on the table it shows the 
+hover affect with expanding the size of the table*/
+music [class=pricing-box5]{
+	max-width: 800px;
+	float: right;
+	margin:2em;
+	display:block;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+	margin-right: 170px;
+	margin-left: 70px;
+	padding: 1em;
+	border: 1px solid silver;
+	margin-bottom: 4em;
+	background-color: #F1F5B9;
+	transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+			/* using pricing-table to make the different table*/
+}
+music [class=pricing-box5]:hover{
+	
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+
+}
+
+/*h1 tag is used in the music for displaying the name of the store and the hover affect is used.*/
+h1{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #2c3e50;
+	display: block;
+	font-size: 20px;
+	transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+
+}
+h1:hover{
+	background-color: #a3a3a3;
+	color:pink;
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+
+}
+/*h2 tag is used in the music for displaying the image of the songs and the hover affect is used.*/
+h2{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #2c3e50;
+	display: block;
+	font-size: 20px;
+	margin: 2.5em;
+	margin-left: 5px;
+	list-style: none;
+	transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+
+}
+h2:before{
+	content: "\2683";
+	color: red;
+
+}
+h2:hover{
+	background-color: #a3a3a3;
+	color:pink;
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+
+}
+
+/*director tag is used in the song for displaying the name of the director and the hover affect is used.*/
+director{
+	display: block;
+	letter-spacing: 2px;
+	list-style-type: upper-alpha;
+	transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+	
+
+}
+director:hover{
+	background-color: #a3a3a3;
+	color:pink;
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+}
+/*musician tag is used in the music for displaying the name of the musician, inside the musician tag 
+attributes are used.The name of the attributes is called with musician tag. uncode of list is used. 
+and the hover affect is used.*/
+musician.guitarist{
+	color: #00CCFF;
+	
+}
+
+musician[musicianType=guitarist]{
+	color: blue;
+	text-transform: uppercase;
+	letter-spacing: 2px;	
+}
+musician.drummer{
+	color: #00CCFF;
+	
+}
+musician[musicianType=drummer]{
+	color: yellow;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+}
+musician.Pianist{
+	color: #00CCFF;
+}
+
+musician[musicianType=Pianist]{
+	color: #521977;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+}
+musician.Flutist{
+	color: #00CCFF;
+}
+
+musician[musicianType=Flutist]{
+	color: #FF1493;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+}
+musician.Tubaist{
+	color: #00CCFF;
+}
+
+musician[musicianType=Tubaist]{
+	color: #8B4513;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+}
+musician{
+	display: list-item;
+	margin-left: 200px;
+	margin-right:105px;
+	list-style: none;
+	transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+
+}
+musician:before{
+	content: "\2764";
+	color: #3399CC;
+}
+musician:hover{
+	background-color: #a3a3a3;
+	color:pink;
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+}
+/*lyricsWriter tag is used in the music for displaying the name of the writer, and the hover affect is used.*/
+lyricsWriter{
+	display: block;
+	letter-spacing: 2px;
+	list-style-type: upper-alpha;
+	transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);	
+
+}
+lyricsWriter:hover{
+	background-color: #a3a3a3;
+	color:pink;
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+}
+/*producer tag is used in the song for displaying the name of the producer. one song have many producer so list style is used,
+ the hover affect is used.*/
+producer{
+	display: block;
+	letter-spacing: 2px;
+	transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+	
+
+}
+producer:hover{
+	background-color: #a3a3a3;
+	color:pink;
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+}
+producer1{
+	display: block;
+	display: list-item;
+	margin-left: 320px;
+	margin-right:290px;
+	#text-transform: uppercase;
+	letter-spacing: 2px;
+	font-family: "Times New Roman", Times, serif;
+	transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+	
+
+}
+producer1:hover{
+	background-color: #a3a3a3;
+	color:pink;
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+}
+/*songName tag is used in the song for displaying the name of the song,
+and the hover affect is used.*/
+songName{
+	display: block;
+	letter-spacing: 2px;
+	list-style-type: upper-alpha;
+	transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);	
+
+}
+songName:hover{
+	background-color: #a3a3a3;
+	color:pink;
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+}
+/*album tag is used in the song for displaying the name of the album,
+and the hover affect is used.*/
+album{
+	display: block;
+	#text-transform: uppercase;
+	letter-spacing: 2px;
+	list-style-type: upper-alpha;
+	transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+	
+
+}
+album:hover{
+	background-color: #a3a3a3;
+	color:pink;
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+}
+/*duration Time tag is used in the song for displaying the recorded time of the song,
+and the hover affect is used.*/
+durationTime{
+	display: block;
+	#text-transform: uppercase;
+	letter-spacing: 2px;
+	list-style-type: upper-alpha;
+	transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+	
+
+}
+durationTime:hover{
+	background-color: #a3a3a3;
+	color:pink;
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+}
+/*releaseDate tag is used in the song for displaying the release date of the song,
+and the hover affect is used.*/
+releaseDate{
+	display: block;
+	#text-transform: uppercase;
+	letter-spacing: 2px;
+	list-style-type: upper-alpha;
+	transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+	
+
+}
+releaseDate:hover{
+	background-color: #a3a3a3;
+	color:pink;
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+}
+/*genre tag is used in the song for displaying the type of the song,
+and the hover affect is used.*/
+genre{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: green;
+	display: block;
+	background-color: #CC9900;
+	transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+	
+
+}
+genre:hover{
+	background-color: #a3a3a3;
+	color:pink;
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+}
+/*singerName tag is used in the singers for displaying the name of the singer,
+and the hover affect is used.*/
+singerName{
+	
+	letter-spacing: 2px;
+	display: block;
+	list-style: none;
+	transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+	
+
+}
+singerName:before{
+	content: "\2764";
+	color: #3399FF;
+}
+singerName:hover{
+	background-color: #a3a3a3;
+	color:pink;
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+}
+/*aaddress tag is used in the singers for displaying the address of the singer,
+and the hover affect is used.*/
+saddress{
+	
+	letter-spacing: 2px;
+	transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+	
+}
+saddress:hover{
+	background-color: #a3a3a3;
+	color:pink;
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+}
+/*phone tag is used in the singers for displaying the phone of the singer,Inside the phone tag attributes is used. attributes is called by using the tag,
+and the hover affect is used.*/
+phone.primary{
+	color: #FF9999;
+}
+
+phone[type=primary]{
+	color: #FF6600;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+}
+phone.secodary{
+	color: #00CCFF;
+}
+
+phone[type=secondary]{
+	color: #CC3333;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+}
+phone{
+	
+	letter-spacing: 2px;
+	display: list-item;
+	display: block;
+	transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+	
+}
+phone:hover{
+	background-color: #a3a3a3;
+	color:pink;
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+}
+/*totalSonRecorded tag is used in the singers for displaying the total song recorded by singer,
+and the hover affect is used.*/
+totalSongRecorded{
+	display: block;
+	letter-spacing: 2px;
+	transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+	
+}
+totalSongRecorded:hover{
+	background-color: #a3a3a3;
+	color:pink;
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+}
+fanFollowing{
+	letter-spacing: 2px;
+	display: block;
+	transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+	
+
+}
+/*FanFollowing tag is used in the singers for displaying the total fan following of the singer,
+and the hover affect is used.*/
+fanFollowing:hover{
+	background-color: #a3a3a3;
+	color:pink;
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+}
+review{
+	letter-spacing: 2px;
+	justify-content: center;
+	transition: transform 0.5s;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+	
+}
+review:hover{
+	background-color: #a3a3a3;
+	color:pink;
+	transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+}
+
+songs{
+	font-size: 100%;
+	margin: 0.5em;
+	font-family: verdana;
+	display: block;
+
+
+}
+div [cls=icon]{
+	text-align: left;
+	float: left;
+	display: block;
+	margin: 0em;
+	width: 650px;
+	height: 400px;
+	margin-left: 50px;
+	background-image: url(images/jazz.jpg);
+	transition: transform 0.5s;
+	#box-shadow: 0 5px 25px rgba(0,0,0,.1);
+	margin-bottom: 2em;
+	transform: transform 1s cubic-bezire(0.7, 0.04, 0.06, 1.71) ;
+	
+	
+}
+div [cls=icon]:hover{
+	transform: translateX(100%);
+	#transform: scale(1.1);
+    #box-shadow: 0 5px 25px rgba(0,0,0,.2);
+	
+}
+div [cls=icon2]{
+	text-align: left;
+	float: left;
+	display: block;
+	margin: 0em;
+	#margin-right: 550px;
+	margin-left: 50px;
+	width: 650px;
+	height: 400px;
+	background-image: url(images/rock.jpg);
+	transition: transform 0.5s;
+	#box-shadow: 0 5px 25px rgba(0,0,0,.1);
+	transform: transform 1s cubic-bezire(0.7, 0.04, 0.06, 1.71) ;
+}
+div [cls=icon2]:hover{
+	transform: translateX(100%);
+	
+	
+}
+div [cls=icon3]{
+	text-align: left;
+	float: left;
+	display: block;
+	margin: 0em;
+	#margin-right: 550px;
+	margin-left: 50px;
+	width: 650px;
+	height: 400px;
+	background-image: url(images/country.jpg);
+	transition: transform 0.5s;
+	transform: transform 1s cubic-bezire(0.7, 0.04, 0.06, 1.71) ;
+}
+div [cls=icon3]:hover{
+	transform: translateX(100%);
+	
+	
+}
+div [cls=icon4]{
+	text-align: left;
+	float: left;
+	display: block;
+	margin: 0em;
+	#margin-right: 550px;
+	margin-left: 50px;
+	width: 650px;
+	height: 500px;
+	background-image: url(images/popmusic.jpg);
+	transition: transform 0.5s;
+	transform: transform 1s cubic-bezire(0.7, 0.04, 0.06, 1.71) ;
+}
+div [cls=icon4]:hover{
+	transform: translateX(100%);
+	
+	
+}
+div [cls=icon5]{
+	text-align: left;
+	float: left;
+	display: block;
+	margin: 0em;
+	#margin-right: 550px;
+	margin-left: 50px;
+	width: 680px;
+	height: 500px;
+	margin-bottom: 2em;
+	background-image: url(images/dupstep.jpg);
+	transition: transform 0.5s;
+	transform: transform 1s cubic-bezire(0.7, 0.04, 0.06, 1.71) ;
+}
+div [cls=icon5]:hover{
+	transform: translateX(100%);
+	
+}
+click{
+	text-align: left;
+	float: left;
+	display: block;
+	font-size: 20px;
+	margin: 3em;
+	max-width: 200px;
+	#letter-spacing: 0px;
+	border: 1px solid silver;
+	border-left-width: 100px;
+	border-right-width: 100px;
+	#background: : url();
+	transition: transform 0.5s;
+	#box-shadow: 0 5px 25px rgba(0,0,0,.1);
+	transform: transform 1s cubic-bezire(0.7, 0.04, 0.06, 1.71) ;
+
+}
+click:hover{
+	background-color: #a3a3a3;
+	color:pink;
+	transform: translateX(100%);
+	#transform: scale(1.1);
+    #box-shadow: 0 5px 25px rgba(0,0,0,.2);
+
+}
+
